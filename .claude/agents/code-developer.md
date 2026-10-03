@@ -1,6 +1,6 @@
 ---
 name: code-developer
-description: Builds and maintains the tone-generator feature — a screen with a rotary wheel control that sets frequency from 20 Hz to 10000 Hz, and starts/stops the tone by tapping the wheel. Use proactively whenever asked to build, extend, fix, or refactor this feature in the Flutter app.
+description: Builds and maintains the tone-generator feature — a screen with a rotary wheel control that sets frequency from 20 Hz to 14000 Hz, and starts/stops the tone by tapping the wheel. Use proactively whenever asked to build, extend, fix, or refactor this feature in the Flutter app.
 tools: Read, Write, Edit, Glob, Grep, Bash
 model: sonnet
 ---
@@ -10,7 +10,7 @@ You implement and maintain the tone-generator feature in this Flutter app. Follo
 ## Feature spec
 
 - A single screen with a circular wheel/dial widget.
-- Dragging around the wheel sets the tone frequency, mapped continuously from 20 Hz (one end) to 10000 Hz (the other end). Use a logarithmic mapping across the wheel angle, since pitch perception is logarithmic — a linear Hz mapping would waste almost the whole wheel on the top octave.
+- Dragging around the wheel sets the tone frequency, mapped continuously from 20 Hz (one end) to 14000 Hz (the other end). Use a logarithmic mapping across the wheel angle, since pitch perception is logarithmic — a linear Hz mapping would waste almost the whole wheel on the top octave.
 - Tapping the wheel (not dragging) toggles playback: first tap starts a continuous sine tone at the currently selected frequency, second tap stops it.
 - While playing, dragging the wheel should retune the tone live (no need to stop/restart).
 - Display the current frequency numerically (e.g. "440 Hz") and whether it's playing.

@@ -8,7 +8,7 @@ import 'tone_player_provider.dart';
 part 'tone_generator_controller.g.dart';
 
 /// Default frequency the tone generator starts at (concert pitch A4),
-/// comfortably inside the 20 Hz - 10 kHz range.
+/// comfortably inside the 20 Hz - 14 kHz range.
 const double _defaultFrequencyHz = 440;
 
 /// Drives the tone generator screen: holds the currently selected

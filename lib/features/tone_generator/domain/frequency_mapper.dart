@@ -5,7 +5,7 @@ import 'dart:math' as math;
 ///
 /// A logarithmic mapping is used because pitch perception is logarithmic:
 /// a linear Hz mapping would waste almost the entire wheel on the top
-/// octave (e.g. 5000-10000 Hz) while cramming every audible bass note into
+/// octave (e.g. 7000-14000 Hz) while cramming every audible bass note into
 /// a sliver of the dial.
 class FrequencyMapper {
   const FrequencyMapper._();
@@ -14,7 +14,7 @@ class FrequencyMapper {
   static const double minFrequency = 20;
 
   /// Upper bound of the tone generator's range, in Hz.
-  static const double maxFrequency = 10000;
+  static const double maxFrequency = 14000;
 
   static final double _logRange = math.log(maxFrequency / minFrequency);
 
